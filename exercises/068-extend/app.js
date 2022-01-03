@@ -9,4 +9,12 @@ var obj2 = {
 
 function extend(obj1, obj2) {
     // your code here
+    for(let property in obj2) {
+        if (!obj1[property]) {
+            obj1[property] = obj2[property];
+        }
+    }
+    return obj1;
 }
+
+console.log(extend(obj1, obj2));
