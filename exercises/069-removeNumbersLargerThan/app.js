@@ -5,4 +5,12 @@ var obj = {
 }
 function removeNumbersLargerThan(num, obj) {
     // your code here
+    for (let property in obj) {
+        if (obj[property] > num) {
+            delete obj[property];
+        }
+    }
+    return obj;
 }
+
+console.log(removeNumbersLargerThan(5, obj));

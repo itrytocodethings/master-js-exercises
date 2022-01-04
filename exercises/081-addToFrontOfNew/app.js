@@ -1,6 +1,7 @@
 
 function addToFrontOfNew(arr, element) {
     // Write your function here
+    
 }
 
 var input = [1, 2];
