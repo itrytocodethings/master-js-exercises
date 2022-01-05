@@ -1,7 +1,9 @@
+const addToFrontOfNew = (arr, element) => {
+    let newArr = [];
+    arr.forEach((ele) => newArr.push(ele));
+    newArr.unshift(element);
 
-function addToFrontOfNew(arr, element) {
-    // Write your function here
-    
+    return newArr;
 }
 
 var input = [1, 2];

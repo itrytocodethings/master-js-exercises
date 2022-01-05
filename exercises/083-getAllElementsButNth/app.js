@@ -1,6 +1,7 @@
-function getAllElementsButNth(array, n) {
-    // Write your function here
-
+const getAllElementsButNth = (array, index) => {
+    array.splice(index, 1);
+    return array;
 }
-var output = getAllElementsButNth(['a', 'b', 'c'], 1);
-console.log(output); // --> ['a', 'c']
+
+let output = getAllElementsButNth([1, 'Wayne', 3, null, true], 3);
+console.log(output);

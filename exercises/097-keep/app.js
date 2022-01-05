@@ -1,1 +1,1 @@
-// Write your function here
+const keep = (arr, keep) => arr.filter((element) => element == keep);
