@@ -1,5 +1,7 @@
 function computeCompoundInterest(principal, interestRate, compoundingFrequency, timeInYears) {
   // your code here
+  //A = P(1 + r/n)^nt
+  return principal * Math.pow((1 + interestRate / compoundingFrequency), compoundingFrequency * timeInYears) - principal;
 }
 
 var output = computeCompoundInterest(1500, .043, 4, 6);

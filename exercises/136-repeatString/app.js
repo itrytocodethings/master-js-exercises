@@ -1,5 +1,11 @@
 function repeatString(string, num) {
     // your code here
+    let str = '';
+    for (let i = 0; i < num; i++) {
+        str += string;
+    }
+
+    return str;
 }
 
 var output = repeatString('code', 3);
